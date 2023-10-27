@@ -26,7 +26,7 @@ try
     year = Convert.ToInt32(Console.ReadLine());
 
     //Inicialización de la clase Date
-    Date dateObject = new Date(day, month, year);
+     Date dateObject = new Date(day, month, year);
     Console.WriteLine("\n");
     Console.WriteLine(dateObject.ToString()); // así imprimo el objeto para poder verlo. 
 }

@@ -45,9 +45,9 @@ namespace EmployeeOOP.Classes
                 IsLeapYearException(isLeapYear, year);
             }
 
-            int[] daysPerMonth = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            int[] daysPerMonth = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }; //vector
 
-            if (day >= 1 && day <= daysPerMonth[month])
+            if (day >= 1 && day <= daysPerMonth[month]) 
             {
                 return day;
             }
@@ -66,6 +66,7 @@ namespace EmployeeOOP.Classes
             }
         }
 
+        //método para validar el año es bisciesto.
         private bool IsLeapYear(int year)
         {
             return year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
